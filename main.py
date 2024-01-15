@@ -13,7 +13,7 @@ def bmi(w, h) :
      elif w < lower_weight or w > upper_weight :
           raise InvalidWeight(f'Weight must be in range {lower_weight}-{upper_weight} kg')
      else : 
-          return  '{:.2f}'.format((w / (h)**2))
+          return  float('{:.2f}'.format((w / (h)**2)))
 
 
 if __name__ == '__main__' : 
