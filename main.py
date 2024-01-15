@@ -17,16 +17,12 @@ def bmi(w, h) :
 
 
 if __name__ == '__main__' : 
-     # if len(sys.argv) < 3 or len(sys.argv) > 3 :
-     #      raise InputNotFound('Enter valid input')
-     # else :
-     #      if sys.argv[1] == 'None' or sys.argv[2] == 'None' : 
-     #           raise InputNotFound('Invalid inputs')
-     #      else : 
-     #           weight = int(sys.argv[1])
-     #           height = int(sys.argv[2])
-     #           print(bmi(weight, height))
-
-     weight = float(sys.argv[1])
-     height = float(sys.argv[2])
-     print('{:.2f}'.format(bmi(weight, height)))
+     if len(sys.argv) < 3 or len(sys.argv) > 3 :
+          raise InputNotFound('Enter valid input')
+     else :
+          if sys.argv[1] == 'None' or sys.argv[2] == 'None' : 
+               raise InputNotFound('Invalid inputs')
+          else : 
+               weight = int(sys.argv[1])
+               height = int(sys.argv[2])
+               print(bmi(weight, height))

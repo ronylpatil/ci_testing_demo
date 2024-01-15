@@ -34,10 +34,6 @@ op_range = {
      'max' : 40
 }
 
-# params = test_cases['cor1']
-# print(params)
-# print(bmi(params['weight'], params['height']))
-
 def test_invalid_weight() : 
      params = test_cases['incor1']
      # match = 'Weight must be in range'
