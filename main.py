@@ -13,7 +13,7 @@ def bmi(w, h) :
      elif w < lower_weight or w > upper_weight :
           raise InvalidWeight(f'Weight must be in range {lower_weight}-{upper_weight} kg')
      else : 
-          return  (w / (h)**2)
+          return  '{:.2f}'.format((w / (h)**2))
 
 
 if __name__ == '__main__' : 
@@ -23,6 +23,6 @@ if __name__ == '__main__' :
           if sys.argv[1] == 'None' or sys.argv[2] == 'None' : 
                raise InputNotFound('Invalid inputs')
           else : 
-               weight = int(sys.argv[1])
-               height = int(sys.argv[2])
+               weight = float(sys.argv[1])
+               height = float(sys.argv[2])
                print(bmi(weight, height))
