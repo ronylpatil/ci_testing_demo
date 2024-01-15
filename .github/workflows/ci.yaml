@@ -8,10 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
-    
+
     - name: set-up python 3.9
     - uses: actions/setup-python@v4
       with:
@@ -28,4 +27,4 @@ jobs:
     
     - name: testing with pytest
       run: |
-        pytest -v testing.py
+        pytest -v
