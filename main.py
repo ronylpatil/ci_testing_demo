@@ -5,7 +5,7 @@ def bmi(w, h) :
      lower_height = 1.12
      upper_height = 1.80
      lower_weight = 25
-     upper_weight = 170
+     upper_weight = 150
      if h == 'None' and w == 'None' : 
           raise InputNotFound('Invalid input')
      elif h <  lower_height or h > upper_height : 
