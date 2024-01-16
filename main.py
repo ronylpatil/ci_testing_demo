@@ -2,9 +2,9 @@ import sys
 from exceptions import InvalidHeight, InvalidWeight, InputNotFound
 
 def bmi(w, h) : 
-     lower_height = 1.12
+     lower_height = 1.12     # in meters
      upper_height = 1.80
-     lower_weight = 25
+     lower_weight = 25     # in kg.
      upper_weight = 150
      if h == 'None' and w == 'None' : 
           raise InputNotFound('Invalid input')
